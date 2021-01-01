@@ -1,0 +1,15 @@
+import pygame
+from time import sleep
+pygame.init()
+window = pygame.display.set_mode((0,0),pygame.FULLSCREEN)
+sleep(2)
+pygame.mixer.init()
+pygame.mixer.music.load('newyear song.mp3.mp3')
+pygame.mixer.music.play()
+sleep(17)
+pygame.mixer.music.load('fireworks.mp3.mp3')
+pygame.mixer.music.play()
+image = pygame.image.load('newyear.png')
+window.blit(image,(0,0))
+pygame.display.update()
+sleep(5)
